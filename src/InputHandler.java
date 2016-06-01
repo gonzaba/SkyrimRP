@@ -9,6 +9,9 @@ public class InputHandler implements KeyListener {
 			System.out.println(1);
 			System.exit(0);
 		}
+		if(e.getKeyCode() == KeyEvent.VK_ENTER){
+			System.out.println(1);
+		}
 	}
 
 	@Override
