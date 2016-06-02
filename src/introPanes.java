@@ -51,15 +51,37 @@ public class introPanes {
 				+ "that thrives on blood? Choose wisely.");
 		JFrame frame = new JFrame();
 		intro.setBackground(frame.getBackground());
-		
+
 		JLabel text2 = new JLabel("Press ENTER to Continue");
-		
-		
+
+
 		panel.add(intro, BorderLayout.EAST);
 		panel.add(text2, BorderLayout.PAGE_END);
 
 		return panel;
 
+
+	}
+
+	public static JPanel factionChoosePane() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new BorderLayout());
+		JTextArea intro = new JTextArea("Your past is non-important as well "
+				+ "as how you managed to arrive in Skyrim. You have a critical "
+				+ "role to fill. \n\rThere are three factions, but you can only be "
+				+ "the leader of one. \n\r\n\rChoose the faction that will write your path."
+
+				+"\n\r\n\r\n\rA.The Companions"
+
+				+"\n\r\n\r\n\rB.Dark Brotherhood"
+
+				+"\n\r\n\r\n\rC.Thieves Guild"
+				+"\n\r\n\r\n\r I want to learn more about... (A, B or C)");
+		JFrame frame = new JFrame();
+		intro.setBackground(frame.getBackground());
+		panel.add(intro, BorderLayout.WEST);
+
+		return panel;
 
 	}
 }
